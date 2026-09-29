@@ -55,12 +55,9 @@ TRANSCRIPT:
     return extract_json(response.text)
 
 st.sidebar.header("Settings")
-api_key = st.sidebar.text_input(
-    "Gemini API Key",
-    type="password",
-    help="Your key is used only for this session and is not stored by this app."
-)
-model_name = st.sidebar.text_input("Gemini model", value="gemini-2.5-flash")
+
+api_key = st.secrets["GEMINI_API_KEY"]
+model_name = "gemini-2.5-flash"
 
 uploaded = st.file_uploader("Upload a meeting transcript", type=["txt", "pdf", "docx"])
 
@@ -69,7 +66,7 @@ transcript = st.text_area("Meeting transcript", height=250, placeholder="Paste t
 
 if st.button("✨ Analyze Meeting", type="primary"):
     if not api_key:
-        st.error("Please enter your Gemini API key in the sidebar.")
+        st.error("Gemini API key is not configured.")
     else:
         try:
             if uploaded:
