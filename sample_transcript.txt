@@ -1,0 +1,10 @@
+Project Meeting - 28 September
+
+Aditi: We need to finish the dashboard before Friday.
+Rahul: I can handle the Streamlit UI and connect the pages.
+Neha: I'll prepare the final test cases and check the upload flow.
+Aditi: Good. Rahul, please complete the UI by Wednesday evening. Neha, finish testing by Thursday.
+Rahul: We also need to decide whether the report should be downloadable.
+Aditi: Yes, let's provide a JSON download so users can save the analysis.
+Neha: One unresolved issue is whether we should support audio files in the first version.
+Aditi: Let's leave audio support for a future update. For now, support TXT, PDF and DOCX.
