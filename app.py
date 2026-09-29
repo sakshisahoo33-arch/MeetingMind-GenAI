@@ -57,7 +57,7 @@ TRANSCRIPT:
 st.sidebar.header("Settings")
 
 api_key = st.secrets["GEMINI_API_KEY"]
-model_name = "gemini-2.5-flash"
+model_name = "gemini-3.8-flash"
 
 uploaded = st.file_uploader("Upload a meeting transcript", type=["txt", "pdf", "docx"])
 
