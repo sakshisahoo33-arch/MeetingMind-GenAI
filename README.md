@@ -43,10 +43,6 @@ streamlit run app.py
 
 Enter your Gemini API key in the sidebar.
 
-### API key
-
-Create a Gemini API key through Google AI Studio and keep it private. Do not commit API keys to GitHub.
-
 ## Project Structure
 
 ```text
